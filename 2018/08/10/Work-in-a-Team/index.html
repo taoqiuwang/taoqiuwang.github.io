@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="About Worksharing">
+<meta name="description" content="About Worksharing Worksharing is a design method that allows multiple team members to work on the same project model at the same time.On many projects, team members are assigned a specific functional">
 <meta name="keywords" content="USC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Work in a Team">
 <meta property="og:url" content="http://yoursite.com/2018/08/10/Work-in-a-Team/index.html">
 <meta property="og:site_name" content="MY NEST IN GITHUB">
-<meta property="og:description" content="About Worksharing">
+<meta property="og:description" content="About Worksharing Worksharing is a design method that allows multiple team members to work on the same project model at the same time.On many projects, team members are assigned a specific functional">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-10T07:02:48.106Z">
+<meta property="og:image" content="http://oru8wj6a8.bkt.clouddn.com/pics/180810/LdKIBi60Km.png?imageslim">
+<meta property="og:image" content="http://oru8wj6a8.bkt.clouddn.com/pics/180810/LdKIBi60Km.png?imageslim">
+<meta property="og:updated_time" content="2018-08-13T07:44:28.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Work in a Team">
-<meta name="twitter:description" content="About Worksharing">
+<meta name="twitter:description" content="About Worksharing Worksharing is a design method that allows multiple team members to work on the same project model at the same time.On many projects, team members are assigned a specific functional">
+<meta name="twitter:image" content="http://oru8wj6a8.bkt.clouddn.com/pics/180810/LdKIBi60Km.png?imageslim">
 
 
 
@@ -300,7 +303,89 @@
       
 
       
-        <h1 id="About-Worksharing"><a href="#About-Worksharing" class="headerlink" title="About Worksharing"></a>About Worksharing</h1>
+        <h1 id="About-Worksharing"><a href="#About-Worksharing" class="headerlink" title="About Worksharing"></a>About Worksharing</h1><p> Worksharing is a design method that allows multiple team members to work on the same project model at the same time.On many projects, team members are assigned a specific functional area to work on.</p>
+<p><img src="http://oru8wj6a8.bkt.clouddn.com/pics/180810/LdKIBi60Km.png?imageslim" alt="worksharing" title="worksharing"></p>
+<p><img src="http://oru8wj6a8.bkt.clouddn.com/pics/180810/LdKIBi60Km.png?imageslim" width="50%" height="50%" align="right"></p>
+<p>Team members share a central model</p>
+<p>Revit projects can be subdivided into <code>worksets</code> to accommodate such environments. You can enable worksharing to create a <code>central model</code> so that team members can <code>simultaneously</code> make design changes to <code>a local copy of the central model</code>.</p>
+<p><kbd></kbd> <sup>xxx</sup>  [GFM][] ff </p>
+<p>A workset is a collection of elements in a workshared project.</p>
+<p>You can create worksets based on <strong><code>functional areas</code></strong>, such as the following:</p>
+<ul>
+<li>For architecture and structural engineering: interior, exterior, and site</li>
+<li>For systems: HVAC, electrical, or <u>plumbing</u></li>
+</ul>
+<p>The <strong>important distinction</strong> when working with ownership of objects in a workset is between making a workset editable  and <strong>borrowing</strong> from a workset.</p>
+<p>When you make a workset editable in Revit, you are taking exclusive ownership of all objects in it. Only one user can exclusively edit each workset at a given time. All team members can view worksets owned by other team members, but they cannot always make changes to them. This restriction prevents potential conflicts within the project.</p>
+<p>It is possible to borrow an element from a workset that you do not own.</p>
+<h1 id="Worksharing-Terminology"><a href="#Worksharing-Terminology" class="headerlink" title="Worksharing Terminology"></a>Worksharing Terminology</h1><p>Learn some of the important terms that are particular to worksharing in Revit.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">TERM</th>
+<th style="text-align:right">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">worksharing</td>
+<td style="text-align:right">A design method that allows multiple team members to work on the same project model at the same time.</td>
+</tr>
+<tr>
+<td style="text-align:left">central model</td>
+<td style="text-align:right">The master project model for a workshared project. The central model stores the current ownership information for all elements in the project, and acts as the distribution point for all changes published to the file. All users save their own local copies of the central model, work locally, and then synchronize with central so that other users can see their work.</td>
+</tr>
+<tr>
+<td style="text-align:left">local model</td>
+<td style="text-align:right">A copy of the project model that resides on the computer system of the team member who is working on the model. When worksharing is used to distribute project work among team members, each member uses a local model to work on his or her workset (functional area). Team members periodically save their changes to the central model so that others can see the changes and update their local model with the latest project information.</td>
+</tr>
+<tr>
+<td style="text-align:left">workset</td>
+<td style="text-align:right">A collection of elements in a project.For architecture, worksets typically define discrete functional areas, such as interior, exterior, site, or parking.For building systems engineering, worksets can delineate functional areas such as HVAC, electrical, plumbing, or piping.When you enable worksharing, you can divide a project into worksets, with different team members responsible for each workset.</td>
+</tr>
+<tr>
+<td style="text-align:left">active workset</td>
+<td style="text-align:right">The workset to which new elements are added. The active workset name displays on Collaborate tabManage Collaboration panel or the status bar.</td>
+</tr>
+<tr>
+<td style="text-align:left">element borrowing</td>
+<td style="text-align:right">Allows you to edit an element that you do not own. If no one owns the element, permission to borrow is automatically granted. If another team member is currently editing the element, that team member is the owner, and you must place a request or wait for it to be relinquished so that you can borrow it.</td>
+</tr>
+<tr>
+<td style="text-align:left">workshared file</td>
+<td style="text-align:right">A Revit project for which worksets have been enabled.</td>
+</tr>
+<tr>
+<td style="text-align:left">non-workshared file</td>
+<td style="text-align:right">A Revit project for which worksets have not been enabled.</td>
+</tr>
+<tr>
+<td style="text-align:left">collaboration</td>
+<td style="text-align:right">Multiple team members working on the same project. These team members may be from different disciplines and working in different locations. Methods of collaboration can include worksharing and using linked models.</td>
+</tr>
+<tr>
+<td style="text-align:left">server-based worksharing</td>
+<td style="text-align:right">A method of worksharing in which the central model is stored on a Revit Server, which communicates with team members across a WAN either directly or through a Revit Server Accelerator.</td>
+</tr>
+<tr>
+<td style="text-align:left">file-based worksharing</td>
+<td style="text-align:right">A method of worksharing in which the central model is stored in a file at a network location.</td>
+</tr>
+<tr>
+<td style="text-align:left">cloud worksharing</td>
+<td style="text-align:right">A method of worksharing in which the central model is stored on the cloud. Team members use Collaboration for Revit to author changes in the model concurrently.</td>
+</tr>
+<tr>
+<td style="text-align:left">Revit Server</td>
+<td style="text-align:right">Any of the servers that host central models in server-based worksharing. Revit Server is also the name of the application that controls communication between team members and central models in a network of Revit Servers and Accelerators.</td>
+</tr>
+<tr>
+<td style="text-align:left">Accelerator</td>
+<td style="text-align:right">A local server that can aggregate data from multiple Revit Servers. Though team members can connect directly to Revit Servers, connecting through an Accelerator optimizes performance.</td>
+</tr>
+</tbody>
+</table>
+
       
     </div>
     
@@ -413,7 +498,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -450,7 +535,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#About-Worksharing"><span class="nav-number">1.</span> <span class="nav-text">About Worksharing</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#About-Worksharing"><span class="nav-number">1.</span> <span class="nav-text">About Worksharing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Worksharing-Terminology"><span class="nav-number">2.</span> <span class="nav-text">Worksharing Terminology</span></a></li></ol></div>
             
 
           </div>
